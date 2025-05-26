@@ -1,5 +1,5 @@
 import React from "react";
-import { FaXTwitter, FaInstagram } from "react-icons/fa6"; // FaXTwitter is from Font Awesome 6
+import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6"; // FaXTwitter is from Font Awesome 6
 
 const Footer = () => {
   return (
