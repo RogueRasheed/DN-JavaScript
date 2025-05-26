@@ -56,16 +56,7 @@ const Footer = () => {
               >
                 <FaInstagram className="w-5 h-5" />
               </a>
-              {/* LinkedIn */}
-                  <a
-                    href="https://www.linkedin.com/in/dan-davies-22907a50/" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-blue-500 transition"
-                  >
-                    <FaLinkedin className="w-5 h-5" />
-                  </a>
-                </div>
+            </div>
           </div>
         </div>
 
