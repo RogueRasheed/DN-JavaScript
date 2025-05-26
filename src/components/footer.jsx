@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6"; // FaXTwitter is from Font Awesome 6
 
 const Footer = () => {
@@ -29,12 +30,12 @@ const Footer = () => {
 
           {/* Get In Touch + Social Icons */}
           <div className="flex items-center gap-4">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="bg-[#253F75] hover:bg-[#2c56a1] px-6 py-3 rounded-md font-medium text-sm transition"
             >
               Get in Touch
-            </a>
+            </Link>
 
             <div className="flex space-x-4">
               {/* Twitter/X */}
@@ -56,7 +57,16 @@ const Footer = () => {
               >
                 <FaInstagram className="w-5 h-5" />
               </a>
-            </div>
+              {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/dan-davies-22907a50" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-500 transition"
+                >
+                  <FaLinkedin className="w-5 h-5" />
+                </a>
+              </div>
           </div>
         </div>
 
