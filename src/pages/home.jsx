@@ -21,6 +21,7 @@ import img10 from "../assets/img10.jpg";
 import img11 from "../assets/img11.jpg";
 import img12 from "../assets/img12.jpg";
 import img13 from "../assets/img13.jpeg";
+import { Link } from "react-router-dom";
 
 
 
@@ -91,11 +92,11 @@ function Home() {
           </div>
         </section>
         <div className="py-10 flex justify-center">
-  <a href="/about">
+  <Link to ="/about">
     <button className="font-[Poppins] bg-[#253F75] hover:bg-[#2c56a1] text-white font-regular px-6 py-3 rounded-md transition duration-200 shadow-md shadow-lg shadow-blue-500/50">
       Learn more about us
     </button>
-  </a>
+  </Link>
 </div>
 <div className="w-full flex flex-col justify-center text-center">
       <section className="bg-white text-center py-16 px-6">
