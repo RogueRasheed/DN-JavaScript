@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+.aurora-navbar {
+  position: relative;
+  overflow: hidden;
+  background: rgba(10, 15, 31, 0.8);
+}
+
+.aurora-navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, #4ADE80, transparent 60%),
+              radial-gradient(circle at 80% 30%, #14B8A6, transparent 70%),
+              radial-gradient(circle at 60% 70%, #A78BFA, transparent 60%);
+  background-size: 200% 200%;
+  filter: blur(60px);
+  animation: auroraNav 8s linear infinite alternate;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+@keyframes auroraNav {
+  0% { background-position: 40% 40%; }
+  50% { background-position: 60% 50%; }
+  100% { background-position: 50% 60%; }
+}
+     

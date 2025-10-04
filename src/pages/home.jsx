@@ -1,7 +1,7 @@
 import HeroHeader from "../components/heroheader";
 import Footer from "../components/footer";
 import bgImage from "../assets/IMG_1129.jpeg";
-import { FaLandmark, FaUsers, FaBullhorn, FaHandshake } from 'react-icons/fa'; 
+import { Landmark, Users, Megaphone, Handshake } from "lucide-react"; 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -70,22 +70,22 @@ function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="flex flex-col items-center">
-              <FaLandmark className="text-3xl text-[#253F75] mb-4" />
+              <Landmark className="font-medium text-3xl text-[#253F75] mb-4" />
               <h3 className="font-bold mb-2 text-[#253F75]">Government Relations</h3>
               <p className="text-sm text-gray-800">We bridge the gap between your mission and government action—so you don’t leave outcomes to chance. Let’s turn policy into progress.</p>
             </div>
             <div className="flex flex-col items-center">
-              <FaUsers className="text-3xl text-[#253F75] mb-4" />
+              <Users className="text-3xl text-[#253F75] mb-4" />
               <h3 className="font-bold mb-2 text-[#253F75]">Public Affairs</h3>
               <p className="text-sm text-gray-800">We help growing organizations shape narratives, engage stakeholders, and own their story – clearly and convincingly.</p>
             </div>
             <div className="flex flex-col items-center">
-              <FaBullhorn className="text-3xl text-[#253F75] mb-4" />
+              <Megaphone className="text-3xl text-[#253F75] mb-4" />
               <h3 className="font-bold mb-2 text-[#253F75]">Advocacy</h3>
               <p className="text-sm text-gray-800">We help new voices shape policy and public debate. Let’s build your influence, mobilize support, and turn ideas into impact—one strategic step at a time.</p>
             </div>
             <div className="flex flex-col items-center">
-              <FaHandshake className="text-3xl text-[#253F75] mb-4" />
+              <Handshake className="text-3xl text-[#253F75] mb-4" />
               <h3 className="font-bold mb-2 text-[#253F75]">Lobbying</h3>
               <p className="text-sm text-gray-800">We help new players navigate government effectively. Get access, build relationships, and protect your interests—before issues become problems.</p>
             </div>
@@ -93,9 +93,11 @@ function Home() {
         </section>
         <div className="py-10 flex justify-center">
   <Link to ="/about">
-    <button className="font-[Poppins] bg-[#253F75] hover:bg-[#2c56a1] text-white font-regular px-6 py-3 rounded-md transition duration-200 shadow-md shadow-lg shadow-blue-500/50">
-      Learn more about us
-    </button>
+   <button className="font-[Poppins] bg-[#253F75] hover:bg-[#2c56a1] text-white font-regular px-6 py-3 rounded-full transition duration-200 shadow-md shadow-blue-500/40">
+  Learn more about us
+</button>
+
+
   </Link>
 </div>
 <div className="w-full flex flex-col justify-center text-center">
